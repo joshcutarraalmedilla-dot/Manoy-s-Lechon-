@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoy's Lechon Bohol — Authentic Bisaya Lechon</title>
+  <meta name="description" content="Manoy's Lechon Bohol — Crispy skin, tender meat, authentic Bisaya flavor. Order whole lechon or lechon belly for pickup or delivery in Bohol, Philippines." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+       <img src="/asset/picture/logo.png" alt="Logo" class="logo-icon">
+        <span class="logo-text">Manoy's <em>Lechon</em></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" onclick="closeMenu()">Home</a></li>
+        <li><a href="#how-to-order" onclick="closeMenu()">How to Order</a></li>
+        <li><a href="#price-checker" onclick="closeMenu()">Price Check</a></li>
+        <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+        <li><a href="#reviews" onclick="closeMenu()">Reviews</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('price-checker').scrollIntoView({behavior:'smooth'})">
+        Order Now
+      </button>
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#hero" onclick="closeMenu()">🏠 Home</a></li>
+        <li><a href="#how-to-order" onclick="closeMenu()">📋 How to Order</a></li>
+        <li><a href="#price-checker" onclick="closeMenu()">💰 Price Check</a></li>
+        <li><a href="#menu" onclick="closeMenu()">🍽️ Menu</a></li>
+        <li><a href="#reviews" onclick="closeMenu()">⭐ Reviews</a></li>
+        <li><a href="#contact" onclick="closeMenu()">📞 Contact</a></li>
+      </ul>
+      <button class="btn-primary mobile-order-btn"
+        onclick="closeMenu(); document.getElementById('price-checker').scrollIntoView({behavior:'smooth'})">
+        🐷 Order Now
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Flame decorations -->
+    <div class="flame-wrap left">
+      <div class="flame f1"></div>
+      <div class="flame f2"></div>
+      <div class="flame f3"></div>
+    </div>
+    <div class="flame-wrap right">
+      <div class="flame f1"></div>
+      <div class="flame f2"></div>
+      <div class="flame f3"></div>
+    </div>
+
+    <div class="hero-content reveal">
+      <p class="hero-sub">Est. Bohol · Authentic Bisaya Flavor</p>
+      <h1 class="hero-title">
+        Manoy's<br /><span class="accent-word">Lechon</span><br />Bohol
+      </h1>
+      <p class="hero-desc">
+        Crispy skin. Tender meat. The real taste of Bohol.<br />
+        Order your whole lechon or lechon belly today.
+      </p>
+
+      <!-- Trust badges -->
+      <div class="hero-badges">
+        <div class="hero-badge">🔥 Charcoal Roasted</div>
+        <div class="hero-badge">🌿 Fresh Local Herbs</div>
+        <div class="hero-badge">🏝️ Born in Bohol</div>
+      </div>
+
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="document.getElementById('price-checker').scrollIntoView({behavior:'smooth'})">
+          💰 Check Prices
+        </button>
+        <button class="btn-outline" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+          🍽️ See Menu
+        </button>
+      </div>
+
+      <!-- Quick stats -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Years Serving</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Bisaya Recipe</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll ticker -->
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <span class="ticker-item">🔥 Whole Lechon</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">🥩 Lechon Belly</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">🌿 Fresh from Bohol</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">😋 Order Now</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">🔥 Charcoal Roasted</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">🏝️ Authentic Bisaya Flavor</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">📦 Delivery Available</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">🔥 Whole Lechon</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">🥩 Lechon Belly</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">🌿 Fresh from Bohol</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">😋 Order Now</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">🔥 Charcoal Roasted</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">🏝️ Authentic Bisaya Flavor</span>
+        <span class="ticker-item">·</span>
+        <span class="ticker-item">📦 Delivery Available</span>
+        <span class="ticker-item">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HOW TO ORDER SECTION
+  ============================================================ -->
+  <section class="how-to-order" id="how-to-order">
+    <div class="section-header reveal">
+      <p class="section-tag">Simple Process</p>
+      <h2 class="section-title">How to Order</h2>
+      <p class="section-desc">Ordering your lechon is quick and easy. Just follow these 4 simple steps.</p>
+    </div>
+
+    <div class="steps-grid">
+      <!-- Step 1 -->
+      <div class="step-card reveal">
+        <div class="step-number">01</div>
+        <div class="step-icon">📋</div>
+        <h4 class="step-title">Choose Your Lechon</h4>
+        <p class="step-desc">Pick between a whole lechon (perfect for big fiestas) or lechon belly (great for smaller gatherings). Use our Price Checker to see the cost by weight.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card reveal">
+        <div class="step-number">02</div>
+        <div class="step-icon">💬</div>
+        <h4 class="step-title">Contact Us</h4>
+        <p class="step-desc">Message us on Facebook or call/Viber our number. Tell us the type, weight, your preferred date, and if you need delivery or pick-up.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card reveal">
+        <div class="step-number">03</div>
+        <div class="step-icon">📅</div>
+        <h4 class="step-title">Confirm Your Order</h4>
+        <p class="step-desc">We will confirm your order and guide you through the deposit. Whole lechon requires a 2-day lead time; belly requires 1 day ahead.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-card reveal">
+        <div class="step-number">04</div>
+        <div class="step-icon">🎉</div>
+        <h4 class="step-title">Enjoy Your Lechon!</h4>
+        <p class="step-desc">Pick up your order or have it delivered within Bohol. Serve it fresh and hot — crispy skin, juicy meat, pure Bohol flavor!</p>
+      </div>
+    </div>
+
+    <!-- CTA strip -->
+    <div class="steps-cta reveal">
+      <p>Ready to get started? Reach us anytime on Facebook or by phone.</p>
+      <div class="steps-cta-btns">
+        <a class="btn-primary" href="#" style="text-decoration:none;">📘 Message on Facebook</a>
+        <a class="btn-outline" href="tel:+639XXXXXXXXX" style="text-decoration:none;">📞 Call / Viber</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRICE CHECKER SECTION
+  ============================================================ -->
+  <section class="price-checker" id="price-checker">
+    <div class="section-header reveal">
+      <p class="section-tag">Transparent Pricing</p>
+      <h2 class="section-title">Price Checker</h2>
+      <p class="section-desc">Select your category and preferred weight to instantly see the price.</p>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="tab-group reveal">
+      <button class="tab-btn active" data-tab="whole" onclick="switchTab('whole', this)">
+        🐷 Whole Lechon
+      </button>
+      <button class="tab-btn" data-tab="belly" onclick="switchTab('belly', this)">
+        🥩 Lechon Belly
+      </button>
+    </div>
+
+    <!-- ── WHOLE LECHON PANEL ── -->
+    <div class="tab-panel active reveal" id="panel-whole">
+      <div class="checker-card">
+        <div class="checker-left">
+          <h3 class="checker-cat-title">Whole Lechon</h3>
+          <p class="checker-note">Select the weight of the whole pig. Price is fixed per weight slab.</p>
+          <div class="kg-buttons" id="whole-kg-buttons">
+            <!-- Buttons are generated by JavaScript from WHOLE_LECHON_PRICES -->
+          </div>
+          <div class="kg-display">
+            <span>Selected: </span>
+            <strong id="whole-selected-kg">—</strong>
+          </div>
+        </div>
+
+        <div class="checker-right">
+          <div class="price-box" id="whole-price-box">
+            <p class="price-label">Estimated Price</p>
+            <p class="price-amount" id="whole-price">₱ —</p>
+            <p class="price-sub" id="whole-price-sub">Choose a weight to see price</p>
+            <div class="avail-badge" id="whole-avail"></div>
+          </div>
+          <div class="checker-info-box">
+            <p>✅ Includes charcoal roasting</p>
+            <p>✅ Available for pickup or delivery</p>
+            <p>✅ Pre-order required (2 days ahead)</p>
+            <p>✅ Seasoned with fresh Bohol herbs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── LECHON BELLY PANEL ── -->
+    <div class="tab-panel" id="panel-belly">
+      <div class="checker-card">
+        <div class="checker-left">
+          <h3 class="checker-cat-title">Lechon Belly</h3>
+          <p class="checker-note">Minimum order: <strong>2 kg</strong>. Select your preferred weight.</p>
+          <div class="kg-buttons" id="belly-kg-buttons">
+            <!-- Buttons are generated by JavaScript from BELLY_PRICES -->
+          </div>
+          <div class="kg-display">
+            <span>Selected: </span>
+            <strong id="belly-selected-kg">—</strong>
+          </div>
+        </div>
+
+        <div class="checker-right">
+          <div class="price-box" id="belly-price-box">
+            <p class="price-label">Estimated Price</p>
+            <p class="price-amount" id="belly-price">₱ —</p>
+            <p class="price-sub" id="belly-price-sub">Choose a weight to see price</p>
+            <div class="avail-badge" id="belly-avail"></div>
+          </div>
+          <div class="checker-info-box">
+            <p>✅ Minimum of 2 kg per order</p>
+            <p>✅ Perfect for small gatherings</p>
+            <p>✅ Seasoned Bohol-style</p>
+            <p>✅ Pre-order required (1 day ahead)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MENU / PRODUCT SHOWCASE SECTION
+  ============================================================ -->
+  <section class="menu-section" id="menu">
+    <div class="section-header reveal">
+      <p class="section-tag">Our Products</p>
+      <h2 class="section-title">What We Serve</h2>
+      <p class="section-desc">Two legendary products, one authentic Bisaya recipe passed down through generations.</p>
+    </div>
+
+    <div class="menu-grid">
+      <!-- Whole Lechon Card -->
+      <div class="menu-card reveal">
+        <div class="menu-img-wrap">
+          <div class="menu-img-placeholder whole-placeholder">
+            <span class="product-emoji">🐷</span>
+          </div>
+          <div class="menu-badge">⭐ Best Seller</div>
+        </div>
+        <div class="menu-card-body">
+          <h3>Whole Lechon</h3>
+          <p>A whole roasted pig, Bohol-style. Crispy golden skin and juicy, flavorful meat seasoned with lemongrass, garlic, and secret Bohol spices. Perfect for fiestas, birthdays, and big celebrations.</p>
+          <ul class="menu-features">
+            <li>🔥 Slow-roasted over real charcoal</li>
+            <li>🌿 Stuffed with fresh local herbs</li>
+            <li>👨‍👩‍👧‍👦 Feeds 30–60 people per lechon</li>
+            <li>📦 Delivery available within Bohol</li>
+          </ul>
+          <div class="menu-price-range">
+            <span class="price-from">Starts at</span>
+            <span class="price-value" id="whole-start-price">₱8,500</span>
+          </div>
+          <div class="menu-specs">
+            <span>⚖️ 18–25 kg range</span>
+            <span>🕑 2-day preorder</span>
+          </div>
+          <button class="btn-primary" onclick="switchTab('whole', document.querySelector('[data-tab=whole]')); document.getElementById('price-checker').scrollIntoView({behavior:'smooth'})">
+            💰 Check Price
+          </button>
+        </div>
+      </div>
+
+      <!-- Lechon Belly Card -->
+      <div class="menu-card reveal">
+        <div class="menu-img-wrap">
+          <div class="menu-img-placeholder belly-placeholder">
+            <span class="product-emoji">🥩</span>
+          </div>
+          <div class="menu-badge belly-badge">🔥 Popular</div>
+        </div>
+        <div class="menu-card-body">
+          <h3>Lechon Belly</h3>
+          <p>Rolled and roasted pork belly with the same crispy skin and rich Bohol flavor. Great for intimate gatherings, family lunches, or when a whole lechon is more than you need.</p>
+          <ul class="menu-features">
+            <li>🔥 Charcoal roasted to perfection</li>
+            <li>🌿 Seasoned with Bohol spices</li>
+            <li>👨‍👩‍👧 Great for 8–20 people</li>
+            <li>⚖️ Order by the kilogram</li>
+          </ul>
+          <div class="menu-price-range">
+            <span class="price-from">Starts at</span>
+            <span class="price-value" id="belly-start-price">₱900</span>
+          </div>
+          <div class="menu-specs">
+            <span>⚖️ Min. 2 kg</span>
+            <span>🕑 1-day preorder</span>
+          </div>
+          <button class="btn-primary" onclick="switchTab('belly', document.querySelector('[data-tab=belly]')); document.getElementById('price-checker').scrollIntoView({behavior:'smooth'})">
+            💰 Check Price
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add-ons bar -->
+    <div class="addons-bar reveal">
+      <p class="addons-label">🛒 Everything comes with:</p>
+      <div class="addons-chips">
+        <span class="addon-chip">🌿 Fresh Herb Stuffing</span>
+        <span class="addon-chip">🍚 Complementary Sarsa (Liver Sauce)</span>
+        <span class="addon-chip">🔥 Charcoal-Fired Roasting</span>
+        <span class="addon-chip">📦 Proper Packaging</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY US SECTION
+  ============================================================ -->
+  <section class="why-us">
+    <div class="section-header reveal">
+      <p class="section-tag">Why Manoy's</p>
+      <h2 class="section-title" style="color:#fff;">The Manoy's Difference</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.65);">We don't cut corners. Every lechon is made the right way — the Bisaya way.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">🔥</div>
+        <h4>Charcoal Roasted</h4>
+        <p>Slow-roasted over real charcoal for that authentic smoky depth of flavor that gas ovens can never match.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🌿</div>
+        <h4>Fresh Local Herbs</h4>
+        <p>Seasoned with lemongrass, garlic, tanglad, and secret Bohol spices sourced from local farms — never dried or powdered.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🏝️</div>
+        <h4>Born in Bohol</h4>
+        <p>A family recipe passed down through generations — pure Bisaya heritage and hometown pride on every plate.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">📦</div>
+        <h4>Delivery Available</h4>
+        <p>We deliver within Bohol. Contact us to arrange your delivery schedule and we'll make sure it arrives fresh and hot.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">💯</div>
+        <h4>Transparent Pricing</h4>
+        <p>No hidden fees or surprise charges. Our price checker shows you exactly what you'll pay — by weight, always fair.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">⏰</div>
+        <h4>On-Time Every Time</h4>
+        <p>We take your event seriously. Place your pre-order on time and we guarantee your lechon is ready when you need it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       REVIEWS / TESTIMONIALS SECTION
+  ============================================================ -->
+  <section class="reviews-section" id="reviews">
+    <div class="section-header reveal">
+      <p class="section-tag">Customer Love</p>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-desc">Real reviews from real Boholanos who have tasted the Manoy's difference.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card reveal">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Ang sarap! We ordered a 20 kg whole lechon for our fiesta and it was gone in less than an hour. Super crispy ang balat and juicy kaayo ang meat. Will definitely order again!"</p>
+        <div class="review-author">
+          <div class="author-avatar">MR</div>
+          <div>
+            <strong>Maria R.</strong>
+            <span>Tagbilaran, Bohol</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card reveal">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Nag-order kog 5 kg lechon belly para sa birthday sa akong anak. On time delivery, fresh, and the flavor is really authentic Bohol-style. Gamay lang ang bayad para sa ganong kalidad!"</p>
+        <div class="review-author">
+          <div class="author-avatar">JD</div>
+          <div>
+            <strong>Jun D.</strong>
+            <span>Panglao, Bohol</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card reveal">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Best lechon in Bohol, hands down. We've tried many and nothing beats Manoy's. The skin is crackling crispy and the meat is so tender. Our go-to for every family celebration!"</p>
+        <div class="review-author">
+          <div class="author-avatar">AL</div>
+          <div>
+            <strong>Ana L.</strong>
+            <span>Loay, Bohol</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="review-card reveal">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Very accommodating si Manoy and the team. Easy to order, they respond quickly on Facebook. The lechon arrived perfectly packaged and still hot. Highly recommend!"</p>
+        <div class="review-author">
+          <div class="author-avatar">PG</div>
+          <div>
+            <strong>Paolo G.</strong>
+            <span>Corella, Bohol</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 5 -->
+      <div class="review-card reveal">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"We ordered 3 kg lechon belly for a small family lunch and it was more than enough. Affordable, masarap, and the sarsa sauce that came with it was perfect. 10/10!"</p>
+        <div class="review-author">
+          <div class="author-avatar">CB</div>
+          <div>
+            <strong>Cynthia B.</strong>
+            <span>Baclayon, Bohol</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 6 -->
+      <div class="review-card reveal">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Ordered twice already and both times the lechon was perfect. You can really taste the difference of charcoal roasting vs gas. Authentic kaayo! Manoy's for life!"</p>
+        <div class="review-author">
+          <div class="author-avatar">RV</div>
+          <div>
+            <strong>Rolando V.</strong>
+            <span>Dauis, Bohol</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overall rating badge -->
+    <div class="rating-badge reveal">
+      <div class="rating-score">5.0</div>
+      <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+      <div class="rating-label">Average rating from our customers</div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact-section" id="contact">
+    <div class="section-header reveal">
+      <p class="section-tag">Get In Touch</p>
+      <h2 class="section-title">Order or Inquire</h2>
+      <p class="section-desc">We're happy to answer your questions and take your order. Reach us anytime!</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Location</strong>
+            <p>Bohol, Philippines</p>
+            <p class="contact-sub">Serving all areas in Bohol</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div>
+            <strong>Phone / Viber</strong>
+            <p>+63 9XX XXX XXXX</p>
+            <p class="contact-sub">Available 8AM – 8PM daily</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🕑</span>
+          <div>
+            <strong>Preorder Lead Time</strong>
+            <p>Whole Lechon: 2 days ahead</p>
+            <p>Lechon Belly: 1 day ahead</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">💬</span>
+          <div>
+            <strong>Facebook Page</strong>
+            <p>Manoy's Lechon Bohol</p>
+            <p class="contact-sub">Message us anytime for orders</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📦</span>
+          <div>
+            <strong>Delivery</strong>
+            <p>Available within Bohol</p>
+            <p class="contact-sub">Delivery fee depends on area</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="contact-cta-box">
+    <div class="cta-icon-wrap">
+    <img src="/asset/picture/logo.png" alt="Manoy's Lechon Logo">
+    </div>
+        <p class="cta-headline">Ready to order?</p>
+        <p class="cta-sub">Message us on Facebook or give us a call or Viber. We'll confirm your order details, date, and delivery.</p>
+        <a class="btn-primary" href="#" style="display:inline-block;text-decoration:none;width:100%;text-align:center;">
+          📘 Message on Facebook
+        </a>
+        <a class="btn-outline" href="tel:+639XXXXXXXXX" style="display:inline-block;text-decoration:none;width:100%;text-align:center;">
+          📞 Call / Viber Now
+        </a>
+        <div class="cta-note">
+          <p>📅 Remember to pre-order at least 1–2 days before your event!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="/asset/picture/logo.png" alt="Manoy's Lechon Logo" class="big-logo">
+        <span>Manoy's Lechon Bohol Base</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#how-to-order">How to Order</a>
+        <a href="#price-checker">Price Check</a>
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#" class="social-btn">📘 Facebook</a>
+        <a href="tel:+639XXXXXXXXX" class="social-btn">📞 Call Us</a>
+      </div>
+
+      <p class="footer-copy">© 2025 Manoy's Lechon Bohol. All rights reserved.</p>
+      <p class="footer-tagline">Authentic Bisaya Lechon — Crispy, Juicy, Unforgettable.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
